@@ -14,6 +14,7 @@
 		}\
 	} while(0)
 
+
 int my_fopen(const char *putanja, const char* mode){
 	int flag = 0;
 
@@ -36,7 +37,7 @@ int my_fopen(const char *putanja, const char* mode){
 	return fd;
 
 }
-
+/*myfopen path mode*/
 int main(int argc, char **argv){
 	check_error(argc == 3, "argumenti");
 
