@@ -33,7 +33,7 @@ int main(int argc, char **argv){
 
 	setpwent();
 
-	struct passwd *user;
+	struct passwd *user = NULL;
 
 	while((user = getpwent()) != NULL){
 		print_users(user);
