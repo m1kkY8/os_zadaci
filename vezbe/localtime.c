@@ -25,10 +25,12 @@ int main(int argc, char **argv){
 	struct tm *vreme = localtime(&now);
 	check_error(vreme != NULL, ">");
 	
-	vreme->tm_year++;
+	char timeString[1024];
+	strftime(timeString, 1024, "Trenutno vreme %H:%M:%S", vreme);
 
 	time_t newTime = mktime(vreme);
-	printf("%s\n", ctime(&newTime));
+	// printf("%s", ctime(&newTime));
+	printf("%s", timeString);
 
 	exit(EXIT_SUCCESS);
 }
