@@ -5,11 +5,12 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <errno.h>
-#include <string.h>
+
 #include <pwd.h>
 #include <grp.h>
 #include <time.h>
 
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
