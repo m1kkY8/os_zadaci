@@ -52,7 +52,8 @@ int main(int argc, char **argv){
     
         exit(0);
 
-    } else { 
+    } else { //prnt
+        
         char command[CMD_LEN];
 
         close(parent_child[RD]);
